@@ -1,0 +1,5 @@
+export const UPDATE_JSON_FORM = "UPDATE_JSON_FORM";
+
+export const GET_JSON_FORM = "GET_JSON_FORM";
+
+export const ADD_JSON_FORM_FIELD = "ADD_JSON_FORM_FIELD";

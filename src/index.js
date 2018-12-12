@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { Provider } from 'react-redux';
+import store from './store';
+import { createStore, applyMiddleware } from 'redux';
+import logger from 'redux-logger';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import { MuiPickersUtilsProvider } from 'material-ui-pickers';
+import MomentUtils from '@date-io/moment';
+
+ReactDOM.render(
+    <Provider store={createStore(store, applyMiddleware(logger))}>
+        <MuiPickersUtilsProvider utils={MomentUtils}>
+            <App />
+        </MuiPickersUtilsProvider>
+    </Provider>,
+    document.getElementById('root')
+);

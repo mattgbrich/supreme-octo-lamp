@@ -1,0 +1,37 @@
+{
+    "schema": {
+        "type": "object",
+        "title": "Xavier Institute",
+        "description": "Application for Admission",
+        "properties": {
+            "birthDate": {
+                "title": "Birth Date",
+                "type": "date"
+            },
+            "firstName": {
+                "title": "First Name",
+                "type": "foo"
+            },
+            "letMeIn": {
+                "title": "Let me in!",
+                "type": "boolean"
+            },
+            "lastName": {
+                "title": "Last Name",
+                "type": "string",
+                "maxLength": 4,
+                "validationMessage": "TOO MANY LETTERS!"
+            }
+        },
+        "required": ["firstName", "lastName"]
+    },
+    "form": [
+        "firstName",
+        "lastName",
+        "birthDate",
+        {
+            "key": "letMeIn",
+            "type": "checkbox"
+        }
+    ]
+}
