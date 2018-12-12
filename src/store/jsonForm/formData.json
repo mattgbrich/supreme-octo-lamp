@@ -10,7 +10,7 @@
             },
             "firstName": {
                 "title": "First Name",
-                "type": "foo"
+                "type": "string"
             },
             "letMeIn": {
                 "title": "Let me in!",
