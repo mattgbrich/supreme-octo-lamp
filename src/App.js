@@ -13,6 +13,7 @@ function App (props) {
     console.log("feature/111 FIRST COMMIT")
     console.log("feature/111 SECOND COMMIT")
     console.log("feature/222 FIRST COMMIT")
+    console.log("feature/222 SECOND COMMIT")
     props.getJsonForm();
     props.getCustomForm();
 
