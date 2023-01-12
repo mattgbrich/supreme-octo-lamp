@@ -12,6 +12,7 @@ import { getCustomForm } from './store/customForm/actions';
 function App (props) {
     console.log("APP VERSION 1")
     console.log("APP VERSION 2")
+    console.log("APP FEATURE 111 FIRST COMMIT")
     props.getJsonForm();
     props.getCustomForm();
 
