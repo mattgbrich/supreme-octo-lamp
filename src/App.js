@@ -11,6 +11,7 @@ import { getCustomForm } from './store/customForm/actions';
 
 function App (props) {
     console.log("APP VERSION 1")
+    console.log("APP VERSION 2")
     props.getJsonForm();
     props.getCustomForm();
 
