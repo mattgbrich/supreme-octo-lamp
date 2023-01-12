@@ -10,6 +10,7 @@ import { getJsonForm } from './store/jsonForm/actions';
 import { getCustomForm } from './store/customForm/actions';
 
 function App (props) {
+    console.log("feature/111 FIRST COMMIT")
     props.getJsonForm();
     props.getCustomForm();
 
