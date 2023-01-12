@@ -10,6 +10,9 @@ import { getJsonForm } from './store/jsonForm/actions';
 import { getCustomForm } from './store/customForm/actions';
 
 function App (props) {
+    console.log("feature 1")
+    console.log("feature 2")
+    console.log("feature 3")
     props.getJsonForm();
     props.getCustomForm();
 
