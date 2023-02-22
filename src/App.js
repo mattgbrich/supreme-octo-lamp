@@ -10,7 +10,7 @@ import { getJsonForm } from './store/jsonForm/actions';
 import { getCustomForm } from './store/customForm/actions';
 
 function App (props) {
-    console.log("HOTFIX")
+    console.log("HOTFIX 2")
     props.getJsonForm();
     props.getCustomForm();
 
